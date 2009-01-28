@@ -1,9 +1,9 @@
 spec-assist
 ===========
 
-Description goes here.
+A gem with helper methods for use with rspec tests.
 
 COPYRIGHT
 =========
 
-Copyright (c) 2008 Nathan L. Walls. See LICENSE for details.
+Copyright (c) 2009 Rex Luther Corporation See LICENSE for details.
