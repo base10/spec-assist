@@ -5,35 +5,37 @@
 
 Gem::Specification.new do |s|
   s.name = %q{spec-assist}
-  s.version = "0.5.1"
+  s.version = "0.6.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Nathan L. Walls"]
   s.date = %q{2010-11-28}
-  s.description = %q{A gem with helper methods for use with rspec tests}
+  s.description = %q{Keep your tests DRY. This makes some methods available to avoid repeating yourself during testing}
   s.email = %q{nathan@rexluther.com}
   s.extra_rdoc_files = [
     "LICENSE",
-    "README"
+    "README.markdown"
   ]
   s.files = [
+    "Gemfile",
+    "Gemfile.lock",
     "LICENSE",
-    "README",
+    "README.markdown",
     "Rakefile",
     "VERSION.yml",
     "lib/spec_assist.rb",
-    "pkg/spec-assist-0.5.1.gem",
     "spec-assist.gemspec",
-    "test/spec_assist_test.rb",
-    "test/test_helper.rb"
+    "test/helper.rb",
+    "test/test_spec_assist.rb"
   ]
   s.homepage = %q{http://github.com/base10/spec-assist}
+  s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{Initial commit}
+  s.summary = %q{A gem with helper methods for use with RSpec tests}
   s.test_files = [
-    "test/spec_assist_test.rb",
-    "test/test_helper.rb"
+    "test/helper.rb",
+    "test/test_spec_assist.rb"
   ]
 
   if s.respond_to? :specification_version then
@@ -41,9 +43,21 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_development_dependency(%q<shoulda>, [">= 0"])
+      s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
+      s.add_development_dependency(%q<jeweler>, ["~> 1.5.1"])
+      s.add_development_dependency(%q<rcov>, [">= 0"])
     else
+      s.add_dependency(%q<shoulda>, [">= 0"])
+      s.add_dependency(%q<bundler>, ["~> 1.0.0"])
+      s.add_dependency(%q<jeweler>, ["~> 1.5.1"])
+      s.add_dependency(%q<rcov>, [">= 0"])
     end
   else
+    s.add_dependency(%q<shoulda>, [">= 0"])
+    s.add_dependency(%q<bundler>, ["~> 1.0.0"])
+    s.add_dependency(%q<jeweler>, ["~> 1.5.1"])
+    s.add_dependency(%q<rcov>, [">= 0"])
   end
 end
 
