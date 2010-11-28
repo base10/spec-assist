@@ -10,7 +10,7 @@ begin
     s.summary = %Q{Initial commit}
     s.email = "nathan@rexluther.com"
     s.homepage = "http://github.com/base10/spec-assist"
-    s.description = "TODO"
+    s.description = "A gem with helper methods for use with rspec tests"
     s.authors = ["Nathan L. Walls"]
   end
 rescue LoadError
