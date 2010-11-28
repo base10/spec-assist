@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION.yml",
     "lib/spec_assist.rb",
+    "pkg/spec-assist-0.5.1.gem",
     "spec-assist.gemspec",
     "test/spec_assist_test.rb",
     "test/test_helper.rb"
