@@ -1,6 +1,6 @@
-require File.dirname(__FILE__) + '/test_helper'
+require 'helper'
 
-class SpecAssistTest < Test::Unit::TestCase
+class TestSpecAssist < Test::Unit::TestCase
   should "probably rename this file and start testing for real" do
     flunk "hey buddy, you should probably rename this file and start testing for real"
   end

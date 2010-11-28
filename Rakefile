@@ -1,3 +1,5 @@
+require 'rubygems'
+require 'bundler'
 begin
   Bundler.setup(:default, :development)
 rescue Bundler::BundlerError => e
@@ -24,7 +26,7 @@ Jeweler::Tasks.new do |gem|
 end
 Jeweler::RubygemsDotOrgTasks.new
 
-
+require 'rake/testtask'
 Rake::TestTask.new do |t|
   t.libs << 'lib'
   t.pattern = 'test/**/*_test.rb'
