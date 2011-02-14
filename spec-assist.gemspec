@@ -5,22 +5,22 @@
 
 Gem::Specification.new do |s|
   s.name = %q{spec-assist}
-  s.version = "0.6.0"
+  s.version = "0.6.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Nathan L. Walls"]
-  s.date = %q{2010-11-28}
+  s.date = %q{2011-02-13}
   s.description = %q{Keep your tests DRY. This makes some methods available to avoid repeating yourself during testing}
   s.email = %q{nathan@rexluther.com}
   s.extra_rdoc_files = [
     "LICENSE",
-    "README.markdown"
+    "README.md"
   ]
   s.files = [
     "Gemfile",
     "Gemfile.lock",
     "LICENSE",
-    "README.markdown",
+    "README.md",
     "Rakefile",
     "VERSION.yml",
     "lib/spec_assist.rb",
